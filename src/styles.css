@@ -23,6 +23,7 @@ h1 {
   font-family: 'Big Shoulders Display', cursive;
   text-transform: uppercase;
   color: var(--gray);
+  font-size: 2em;
 }
 
 /* The 3 Divs */
