@@ -11,6 +11,8 @@
 /* Typography */
 
 body {
+  display: grid;
+  place-items: center;
   color: var(--white);
 }
 
@@ -27,13 +29,23 @@ h1 {
 }
 
 /* The 3 Divs */
-section > div {
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-inline-size: 65em;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+section > * {
+  /* max-inline-size: 15em; */
   padding: 2em;
+  flex: 1 1 15rem;
 }
 
 div:first-of-type {
   background-color: var(--orange);
-  border-radius: 1em 1em 0 0;
 }
 
 div:nth-of-type(2) {
@@ -42,7 +54,6 @@ div:nth-of-type(2) {
 
 div:last-of-type {
   background-color: var(--green);
-  border-radius: 0 0 1em 1em;
 }
 
 /* Buttons */
@@ -64,4 +75,11 @@ div:nth-of-type(2) button {
 
 div:last-of-type button {
   color: var(--green);
+}
+
+@media (min-width: 30em) {
+  div:first-of-type,
+  div:last-of-type {
+    border-radius: 0px;
+  }
 }
