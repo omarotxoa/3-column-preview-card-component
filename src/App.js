@@ -3,7 +3,6 @@ import Box from './components/Box'
 function App() {
 
   return (
-    <>
     <section>
       <Box>
         <img src="./images/icon-sedans.svg" alt="" />
@@ -26,7 +25,6 @@ function App() {
         <button>Learn More</button>
       </Box>
     </section>
-    </>
   )
 }
 
